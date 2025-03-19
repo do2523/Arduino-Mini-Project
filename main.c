@@ -20,7 +20,7 @@ void loop()
       myServo.write(pos);
       delay(15);
       distance = distancer();
-      while (distance <= 10) {
+      while (distance <= 5) {
         myServo.write(myServo.read());
         distance = distancer();
         delay(100);
@@ -31,7 +31,7 @@ void loop()
       myServo.write(pos);
       delay(15);
       distance = distancer();
-      while (distance <= 10) {
+      while (distance <= 5) {
         myServo.write(myServo.read());
         distance = distancer();
         delay(100);
